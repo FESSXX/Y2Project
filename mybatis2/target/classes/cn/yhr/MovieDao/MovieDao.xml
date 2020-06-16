@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.yhr.mdao">
+    <select id="getmoivebyid" parameterType="int" resultType="movie">
+        select * from movie where mid=#{id}
+    </select>
+    <insert id="addmovie" parameterType="movie">
+            insert into movie(mname,price,protagonist,director) values(#{mname},#{price},#{protagonist},#{director})
+    </insert>
+    <select id="getmoviebymname" parameterType="String" resultType="movie">
+        select  * from  movie where mname=#{mname}
+    </select>
+    <update id="updatemovie" parameterType="movie">
+        update movie set price=#{price} where mname=#{mname}
+    </update>
+    <delete id="delmovie" parameterType="movie">
+        delete  from movie where  mid=#{mid}
+    </delete>
+</mapper>
