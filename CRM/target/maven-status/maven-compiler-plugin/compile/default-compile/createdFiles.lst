@@ -1,0 +1,12 @@
+cn\yhr\crm\dao\customerDao.class
+cn\yhr\crm\servlet\updateServlet.class
+cn\yhr\crm\service\customerService.class
+cn\yhr\crm\servlet\delServlet.class
+cn\yhr\crm\entity\base_dict.class
+cn\yhr\crm\dao\impl\customerDaoimpl.class
+cn\yhr\crm\dao\BaseDao.class
+cn\yhr\crm\entity\customer.class
+cn\yhr\crm\service\impl\customerServiceimpl.class
+cn\yhr\crm\servlet\listServlet.class
+cn\yhr\crm\entity\page.class
+cn\yhr\crm\servlet\delsServlet.class
