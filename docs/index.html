@@ -28,15 +28,23 @@
 			h1{
 				font-size: 300px;
 			}
+			html{
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
 		</style>
 		<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
 		<script>
 			if (~navigator.userAgent.indexOf('Mobile')) {
+				$("html").css("background-image","url(img/gaitubao_video_Trim_90.gif)");
+				$("html").css("background-size","125%");
 				alert("三秒后自动跳转");
 				var a=1;
 				var i=3;
-				window.setInterval(function(){},1000);
 				window.setTimeout("window.location=\"https://github.com/FESSXX/Y2Project\";",3000);
+			}else{
+				$("html").css("background-image","url(img/video_Trim.gif)");
+				window.setTimeout("window.location=\"https://github.com/FESSXX/Y2Project\";",3500);
 			}
 		</script>
 		<script type="text/javascript">	
@@ -49,8 +57,7 @@
 	</head>
 	<body style="overflow:-Scroll;overflow-y:hidden">
 		<div id="d">
-		<span>视频播完自动跳转如果不相等->->-></span><a href="https://github.com/FESSXX/Y2Project">点我去GitHub！</a>
-		<video preload id="vi" src="img/video.mp4"  style="width: 100%;" autoplay="autoplay" muted="muted"></video>
+		<span>动图播完自动跳转如果不想等->->-></span><a href="https://github.com/FESSXX/Y2Project">点我去GitHub！</a>
 		</div>
 			<script>
 			if(a==1){
