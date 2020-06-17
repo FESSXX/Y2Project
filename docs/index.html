@@ -25,11 +25,18 @@
 				object-fit: fill;
 				position: absolute;
 			}
+			h1{
+				font-size: 300px;
+			}
 		</style>
 		<script type="text/javascript" src="js/jquery-3.3.1.js" ></script>
 		<script>
 			if (~navigator.userAgent.indexOf('Mobile')) {
-				window.location="https://github.com/FESSXX/Y2Project";s
+				alert("三秒后自动跳转");
+				var a=1;
+				var i=3;
+				window.setInterval(function(){},1000);
+				window.setTimeout("window.location=\"https://github.com/FESSXX/Y2Project\";",3000);
 			}
 		</script>
 		<script type="text/javascript">	
@@ -41,7 +48,15 @@
 		</script>
 	</head>
 	<body style="overflow:-Scroll;overflow-y:hidden">
+		<div id="d">
 		<span>视频播完自动跳转如果不相等->->-></span><a href="https://github.com/FESSXX/Y2Project">点我去GitHub！</a>
-		<video id="vi" src="img/video.mp4" autoplay="autoplay" muted style="width: 100%;"></video>
+		<video id="vi" src="img/video.mp4"  style="width: 100%;" autoplay="autoplay" muted="muted"></video>
+		</div>
+			<script>
+			if(a==1){
+				$("#d").html("");
+				window.setInterval(function(){$("#d").html("<h1>"+i--+"</h1>");},1000);
+			}
+		</script>
 	</body>
 </html>
