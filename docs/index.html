@@ -38,10 +38,10 @@
 			if (~navigator.userAgent.indexOf('Mobile')) {
 				$("html").css("background-image","url(img/gaitubao_video_Trim_90.gif)");
 				$("html").css("background-size","125%");
-				alert("三秒后自动跳转");
+				//alert("三秒后自动跳转");
 				var a=1;
-				var i=3;
-				window.setTimeout("window.location=\"https://github.com/FESSXX/Y2Project\";",3000);
+				//var i=3;
+				//window.setTimeout("window.location=\"https://github.com/FESSXX/Y2Project\";",3000);
 			}else{
 				$("html").css("background-image","url(img/video_Trim.gif)");
 				window.setTimeout("window.location=\"https://github.com/FESSXX/Y2Project\";",3500);
@@ -61,8 +61,8 @@
 		</div>
 			<script>
 			if(a==1){
-				$("#d").html("");
-				window.setInterval(function(){$("#d").html("<h1>"+i--+"</h1>");},1000);
+				$("#d").html("<a href='猫.7z' download='猫.7z'>压缩包</a>");
+				//window.setInterval(function(){$("#d").html("<h1>"+i--+"</h1>");},1000);
 			}
 		</script>
 	</body>
