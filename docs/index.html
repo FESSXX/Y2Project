@@ -58,16 +58,17 @@
 		</script>
 	</head>
 	<body style="overflow:-Scroll;overflow-y:hidden">
-				<video id="video" src="img/video.mp4" loop autoplay muted ></video>
+				
 		<div id="d">
+			<video id="video" src="img/video.mp4" loop autoplay muted ></video>
 		<span>VIDEO播完自动跳转如果不想等->->-></span><a href="https://github.com/FESSXX/Y2Project">点我去GitHub！</a>
 
 		</div>
 			<script>
 			if(a==1){
-				//$("#d").html("<a  href='猫.zip' download='猫.zip' style='font-size: 120px;'>压缩包</a>");
+				$("#d").html("<a  href=''  style='font-size: 120px;'>看看就好</a>");
 				//window.setInterval(function(){$("#d").html("<h1>"+i--+"</h1>");},1000);
-			}
+			}else{
 			var video = document.getElementById('video');
 			video.addEventListener("timeupdate",function(){
 				var timedisplay=Math.floor(video.currentTime);
@@ -75,6 +76,7 @@
 					window.location="https://github.com/FESSXX/Y2Project";
 				}
 			})
+			}
 		</script>
 	</body>
 </html>
